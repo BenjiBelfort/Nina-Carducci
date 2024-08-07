@@ -6,7 +6,12 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+
+h1 {
+	font-size: 26px;
+}
+
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -16,10 +21,6 @@ body {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
-}
-
-.top-header .name {
-	font-size: 26px;
 }
 
 nav ul {
@@ -136,20 +137,21 @@ nav a {
 	font-size: 24px;
 }
 
-.quote {
+blockquote {
 	font-family: 'Spectral';
-	font-style: italic;
 	width: 70%;
-	margin: auto;
 	padding-block: 3em;
+	margin: auto;
 }
-.quote__text {
+
+blockquote p {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 45px;
 }
-.quote__author {
+
+blockquote cite {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
@@ -175,7 +177,6 @@ nav a {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -320,15 +321,16 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header .nav,
+	header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
